@@ -1,0 +1,39 @@
+    1  cd
+    2  mkdir test
+    3  cd test
+    4  touch file
+    5  ls -l
+    6  chmod ugo-rwx file
+    7  ls -l
+    8  echo 'test' > file
+    9  cat file
+   10  chmod u+w file
+   11  ll file
+   12  echo 'test' > file
+   13  cat file
+   14  chmod g+r file
+   15  ll file
+   16  cat file
+   17  chmod u+r file
+   18  ls -l
+   19  cat file
+   20  mkdir dir
+   21  cd dir
+   22  touch new_file
+   23  echo 'file 2' > new_file
+   24  ls
+   25  cd ..
+   26  chmod u-x dir
+   27  cat dir/new_file
+   28  rm dir/new_file
+   29  chown root file
+   30  chown :root file
+   31  umask 177
+   32  touch file1
+   33  ll file1
+   34  umask 111
+   35  touch file2
+   36  ll file2
+   37  cat file
+   38  ls -lR > ~/BOS/Lab2/ls.txt
+   39  history > ~/BOS/Lab2/lab2_history.txt

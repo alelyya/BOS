@@ -1,0 +1,10 @@
+.:
+total 4
+drw-rwxr-x. 2 alelyya alelyya 22 Oct 16 22:22 dir
+-rw-r-----. 1 root    alelyya  5 Oct 16 22:20 file
+-rw-------. 1 alelyya alelyya  0 Oct 16 22:31 file1
+-rw-rw-rw-. 1 alelyya alelyya  0 Oct 16 22:32 file2
+
+./dir:
+total 0
+-????????? ? ? ? ?            ? new_file
