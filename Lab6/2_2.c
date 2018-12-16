@@ -7,10 +7,9 @@ int main(void) {
     if (pid == 0) {
         sleep(1);
         printf("Child PID = %d\nParent PID = %d\n", getpid(), getppid());
-    } else { 
-           sleep(2); 
-           wait(NULL);
     }
+    if (pid != 0)
+        sleep(2);
     return 0;
 }
 
