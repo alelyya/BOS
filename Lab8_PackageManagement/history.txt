@@ -1,0 +1,84 @@
+   16  yum repolist
+   17  yum grouplist
+   18  rpm -qa | less
+   19  rpm -qa | wc -l
+   20  yum list installed | less
+   21  rpm -qa | grep gnuplot
+   22  yum search gnuplot
+   23  yum info gnuplot
+   24  sudo yum install gnuplot
+   25  rpm -qi gnuplot
+   26  yum list installed gnuplot
+   27  rpm -ql gnuplot
+   28  rpm -qf /usr/bin/gnuplot-wx
+   29  yum deplist gnuplot
+   30  sudo rpm -e gnuplot-common
+   31  sudo yum remove gnuplot-common
+   32  touch /etc/yum.repos.d/yandex.repo
+   33  sudo touch /etc/yum.repos.d/yandex.repo
+   34  vim /etc/yum.repos.d/yandex.repo
+   35  sudo vim /etc/yum.repos.d/yandex.repo
+   36  sudo yum clean all
+   37  sudo yum repolist yandex
+   38  sudo yum install @development-tools rpmdev* rpm-sign
+   39  cd
+   40  rpmdev-setuptree
+   41  ls
+   42  cd ~rpmbuild/SOURCES/
+   43  cd ~/rpmbuild/SOURCES/
+   44  mkdir 505-18-1.0
+   45  cd 505-18-1.0/
+   46  vi 505-18
+   47  chmod +x 505-18 
+   48  cd ~/rpmbuild/SOURCES/
+   49  tar -cvzf 505-18-1.0.tar.gz 505-18-1.0
+   50  cd ../SPECS/
+   51  vi 505-18.spec
+   52  rpmbuild -ba 505-18.spec 
+   53  vi 505-18.spec
+   54  rpmbuild -ba 505-18.spec 
+   55  ls
+   56  cd
+   57  ls
+   58  cd rpmbuild/
+   59  ls
+   60  cd RPMS/
+   61  ls
+   62  cd noarch
+   63  ls
+   64  cdd ..
+   65  cd ~/rpmbuild/
+   66  ls
+   67  cd ~/rpmbuild/SOURCES/
+   68  mkdir c-505-18-1.0
+   69  cd c-505-18-1.0/
+   70  vi c-505-18.c
+   71  cd ~/rpmbuild/SOURCES/
+   72  tar cvfz c-505-18-1.0.tar.gz -c-505-18-1.0
+   73  tar cvfz c-505-18-1.0.tar.gz c-505-18-1.0
+   74  cd ~/rpmbuild/SPECS/
+   75  vi c-505-18.spec
+   76  rpmbuild -ba c-505-18.spec 
+   77  gpg2 --gen-key
+   78  sudo yum install heveged
+   79  sudo yum install haveged
+   80  sudo systemctl enable haveged
+   81  sudo systemctl start haveged
+   82  gpg2 --export -a 'Vladimir Svinin' > ~/rpmbuild/RPM-GPG-KEY-Vladimir-Svinin
+   83  vi ~/.rpmmacros
+   84  rpm --addsign ~/rpmbuild/RPMS/*/*.rpm
+   85  vi ~/.rpmmacros
+   86  rpm --addsign ~/rpmbuild/RPMS/*/*.rpm
+   87  sudo yum install createrepo
+   88  sudo mkdir -p /var/www/html/myrepo
+   89  sudo cp ~/rpmbuild/RPMS/*/*.rpm /var/www/html/myrepo/
+   90  sudo cp ~/rpmbuild/RPM-GPG-KEY-Vladimir-Svinin /var/www/html/myrepo
+   91  sudo createrepo -v /var/www/html/myrepo
+   92  sudo vi /etc/yum.repos.d/my.repo
+   93  sudo yum install -y httpd
+   94  sudo systemctl enable httpd.service
+   95  sudo systemctl start httpd.service
+   96  yum repolist
+   97  sudo yum install c-505-18 505-18
+   98  cd ~/BOS/Lab8_PackageManagement/
+   99  history >> history.txt
